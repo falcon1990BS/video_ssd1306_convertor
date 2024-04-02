@@ -73,7 +73,7 @@ uint8_t display_logo()
 
 9. the result is like this
 
-![MYLOGO](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/040cb6c5-59a8-48ae-bb3d-0378d95a7833)
+![MYLOGO](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/944f90bf-64cf-461f-9af8-326b2f2c23f8)
 
 
 
