@@ -1,9 +1,7 @@
 Description:
 
 The video_ssd1306_convertor converts a .mp4 video into a two dimensional C-language array.
-
 This array can then be copied to an .h file and used by a ssd1306.c library.
-
 This script is free, provided that the libraries used are also free.
 
 Usage:
