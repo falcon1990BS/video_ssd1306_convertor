@@ -78,7 +78,6 @@ uint8_t display_logo()
 		cpt =0;
 	}
 	SSD1306_UpdateScreen();
-	}
 	return 0;
 }
 ```
