@@ -63,7 +63,7 @@ The .gif is like this:
 ![mylogo_12](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/56671bb6-1007-4447-9504-309f74714d5f)
 
 7. Used a function in the C program that calls the "SSD1306_DrawBitmap()" function.
-8. 
+
 Example (pseudo code):
 
 ```python
