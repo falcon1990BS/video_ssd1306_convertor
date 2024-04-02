@@ -35,18 +35,22 @@ python VideoToSSD1306Convertor.py C:\<user>\Documents\<myproject>\<myvideo.mp4> 
 Tutorial:
 
 1. Create an animated logo with powerpoint 
-![mylogo_01](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/1d922373-cfd4-481a-a1a0-dd250d920171)
-![mylogo_02](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/57838dc1-1f89-400c-becb-bb1dc85071d0)
-![mylogo_03](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/9c57163d-7fe3-4133-8ae0-8489e0582347)
-![mylogo_04](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/108f15e9-167a-48ad-b921-0c9e90a7e31c)
+![mylogo_01](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/144198be-14a7-4a86-b012-8f443942c93e)
+![mylogo_02](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/8e15d62b-ea83-4c35-afa2-c3e671db1526)
+![mylogo_03](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/fe1e623d-d06c-40ac-ba3c-07f543280e3f)
+![mylogo_04](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/1d062b4a-4997-470a-966f-d39c45347165)
+
 2. Export as .mp4 with a slightly longer duration than the animation
-![mylogo_05](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/a1abd5ca-9c31-45e9-8abc-94af9bd10823)
-![mylogo_06](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/e3241272-879a-438c-90a0-e3647af6cd57)
+![mylogo_05](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/b4a05492-d53c-401c-92cf-2c41447cd8c0)
+![mylogo_06](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/601f6dd9-abb3-45d0-b7ae-db0ae96f65ed)
+
 3. Create a directory with the python script and video 
 ![mylogo_07](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/128a2d95-630d-4bb1-914f-a3c629835b36)
+
 4. Run the python script from the directory
 ![mylogo_09](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/27474fe0-1664-4fc0-a70f-b35ac2565e83)
 ![mylogo_10](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/49b30ae3-0a92-4a51-8a80-2e5e3199a361)
+
 5. Go to the generated directory <mylogossd1306_gif>.
 ![mylogo_11](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/247b295f-3173-4579-af95-f8f21ab78612)
 The directory contains another directory with the images of the cut video, the gif of the video in 128x64 format and the C file of the table corresponding to the frames of the video.
@@ -54,9 +58,10 @@ The .gif is like this:
 
 ![mylogossd1306](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/7444841a-3811-4b21-80a2-2922266c6d20)
 
-7. The C file is composed as follows
+6. The C file is composed as follows
 ![mylogo_12](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/56671bb6-1007-4447-9504-309f74714d5f)
-8. Used a function in the C program that calls the "SSD1306_DrawBitmap()" function. 
+
+7. Used a function in the C program that calls the "SSD1306_DrawBitmap()" function. 
 Example (pseudo code):
 
 ```python
@@ -76,7 +81,7 @@ uint8_t display_logo()
 }
 ```
 
-9. the result is like this
+8. the result is like this
 
 ![MYLOGO](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/944f90bf-64cf-461f-9af8-326b2f2c23f8)
 
