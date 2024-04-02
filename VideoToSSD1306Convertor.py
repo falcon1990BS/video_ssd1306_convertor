@@ -1,10 +1,17 @@
 import os
 import sys
+import re
 from PIL import Image, ImageOps
 from moviepy.editor import VideoFileClip
 from PIL import Image, ImageSequence
 import math
 import shutil
+
+def extract_number(filename):
+    # Extracts the first group of digits in the given file name.
+    # If no number is found, returns 0.
+    match = re.search(r'\d+', filename)
+    return int(match.group()) if match else 0
         
 def rename_and_replace_images(directory):
     # Browse all files in the directory
@@ -54,15 +61,18 @@ def image_to_1d_array(image_path):
 def process_images_in_directory(directory, output_file, decimation):
     # Open file in write mode
     with open(output_file, 'w') as f_out:
+    
         # Redirect output to file
         original_stdout = sys.stdout
-        sys.stdout = f_out
-
+        sys.stdout = f_out 
+        
         # Initialize a list to store the pixels of all images
         all_image_pixels = []
 
-        # Browse all files in directory
-        for filename in os.listdir(directory):
+        # Browse all files sorted in directory
+        files = os.listdir(directory)
+        files_sorted = sorted(files, key=extract_number)
+        for filename in files_sorted:
             if filename.endswith(".gif"):
                 file_path = os.path.join(directory, filename)
 
@@ -73,12 +83,10 @@ def process_images_in_directory(directory, output_file, decimation):
                 all_image_pixels.append(image_pixels)
          
         # Calculate array size
-        d1 = len(all_image_pixels[0])
-        d1 = math.ceil(d1 / 16)
-        d1 = math.ceil(d1 / decimation)
-        d1 = d1 + 1
         d2 = len(all_image_pixels[0])
-                
+        d1 = len(all_image_pixels)
+        d1 = math.floor(d1 / decimation)     
+
         # Display the array in the output file
         print("const unsigned char gif_array[{}][{}] = {{".format(d1, d2), file=f_out)
         for idx, image_pixels in enumerate(all_image_pixels):
@@ -101,7 +109,7 @@ def process_images_in_directory(directory, output_file, decimation):
 
         # Restore standard output
         sys.stdout = original_stdout
-        
+
 def movie_convertor(mp4_file_path, gif_path, folder_gif_path):
     clip = VideoFileClip(mp4_file_path)
     # Resize video
