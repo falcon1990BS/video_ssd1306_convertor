@@ -54,32 +54,20 @@ The .gif is like this:
 8. Used a function in the C program that calls the "SSD1306_DrawBitmap()" function. 
 Example (pseudo code):
 
+
 uint8_t display_logo()
-
 {
-
-  static uint8_t cpt = 0;
-  
+	static uint8_t cpt = 0;
 	SSD1306_Clear();
- 
 	SSD1306_DrawBitmap(0, 0, gif_array[cpt], 128, 64, 1);
- 
 	if(cpt++ >= 56)
- 
 	{
- 
-	  SSD1306_Clear();
-   
+		SSD1306_Clear();
 		cpt =0;
-  
 	}
- 
 	SSD1306_UpdateScreen();
- 
 	}
- 
 	return 0;
- 
 }
 
 9. the result is like this
