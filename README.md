@@ -34,7 +34,7 @@ python VideoToSSD1306Convertor.py C:\<user>\Documents\<myproject>\<myvideo.mp4> 
 
 Tutorial:
 
-1. Create an animated logo with poweerpoint 
+1. Create an animated logo with powerpoint 
 ![mylogo_01](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/1d922373-cfd4-481a-a1a0-dd250d920171)
 ![mylogo_02](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/57838dc1-1f89-400c-becb-bb1dc85071d0)
 ![mylogo_03](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/9c57163d-7fe3-4133-8ae0-8489e0582347)
