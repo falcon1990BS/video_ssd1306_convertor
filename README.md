@@ -30,7 +30,9 @@ Steps:
 
 Example (windows):
 
+```ssh
 python VideoToSSD1306Convertor.py C:\<user>\Documents\<myproject>\<myvideo.mp4> <myprojectname> 1
+```
 
 Tutorial:
 
