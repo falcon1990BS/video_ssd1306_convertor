@@ -54,6 +54,7 @@ Tutorial:
 5. Go to the generated directory <mylogossd1306_gif>.
 ![mylogo_11](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/247b295f-3173-4579-af95-f8f21ab78612)
 The directory contains another directory with the images of the cut video, the gif of the video in 128x64 format and the C file of the table corresponding to the frames of the video.
+
 The .gif is like this:
 
 ![mylogossd1306](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/7444841a-3811-4b21-80a2-2922266c6d20)
