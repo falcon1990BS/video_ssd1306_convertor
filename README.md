@@ -1,9 +1,13 @@
 Description:
+
 The video_ssd1306_convertor converts a .mp4 video into a two dimensional C-language array.
+
 This array can then be copied to an .h file and used by a ssd1306.c library.
+
 This script is free, provided that the libraries used are also free.
 
 Usage:
+
 - The python script must be run with python 3
 - Some libraries may need to be installed. Just use "pip" to use them. 
 - The python script needs 3 arguments:
@@ -17,6 +21,7 @@ Usage:
 - Copy .mp4 video to project directory
        
 Steps:
+
 1. Create a directory with the project name
 2. Copy the python script
 3. Copy the video in .mp4 format
@@ -26,9 +31,11 @@ Steps:
 6. The .c file is created in the project directory.
 
 Example (windows):
+
 python VideoToSSD1306Convertor.py C:\<user>\Documents\<myproject>\<myvideo.mp4> <myprojectname> 1
 
 Tutorial:
+
 1. Create an animated logo with poweerpoint 
 ![mylogo_01](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/1d922373-cfd4-481a-a1a0-dd250d920171)
 ![mylogo_02](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/57838dc1-1f89-400c-becb-bb1dc85071d0)
