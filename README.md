@@ -48,6 +48,7 @@ The directory contains another directory with the images of the cut video, the g
 The .gif is like this:
 
 ![mylogossd1306](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/7444841a-3811-4b21-80a2-2922266c6d20)
+
 7. The C file is composed as follows
 ![mylogo_12](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/56671bb6-1007-4447-9504-309f74714d5f)
 8. Used a function in the C program that calls the "SSD1306_DrawBitmap()" function. 
