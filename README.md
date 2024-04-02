@@ -55,18 +55,31 @@ The .gif is like this:
 Example (pseudo code):
 
 uint8_t display_logo()
+
 {
+
   static uint8_t cpt = 0;
+  
 	SSD1306_Clear();
+ 
 	SSD1306_DrawBitmap(0, 0, gif_array[cpt], 128, 64, 1);
+ 
 	if(cpt++ >= 56)
+ 
 	{
+ 
 	  SSD1306_Clear();
+   
 		cpt =0;
+  
 	}
+ 
 	SSD1306_UpdateScreen();
+ 
 	}
+ 
 	return 0;
+ 
 }
 
 9. the result is like this
