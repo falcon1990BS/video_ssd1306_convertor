@@ -54,7 +54,7 @@ The .gif is like this:
 8. Used a function in the C program that calls the "SSD1306_DrawBitmap()" function. 
 Example (pseudo code):
 
-
+```python
 uint8_t display_logo()
 {
 	static uint8_t cpt = 0;
@@ -69,9 +69,13 @@ uint8_t display_logo()
 	}
 	return 0;
 }
+```
 
 9. the result is like this
+
 ![MYLOGO](https://github.com/falcon1990BS/video_ssd1306_convertor/assets/37402726/040cb6c5-59a8-48ae-bb3d-0378d95a7833)
+
+
 
 
 
